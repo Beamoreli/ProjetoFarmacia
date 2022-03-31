@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
-@Table(name = "tb_produto")
+@Table(name = "tb_produtos")
 public class Produtos {
 
 	@Id
@@ -33,7 +33,7 @@ public class Produtos {
 	}
 	
 	@ManyToOne
-	@JsonIgnoreProperties("produto")
+	@JsonIgnoreProperties("produtos")
 	private Categoria categoria;
 
 	public void setId(Long id) {
